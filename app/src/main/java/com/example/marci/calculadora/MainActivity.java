@@ -31,6 +31,21 @@ public class MainActivity extends AppCompatActivity {
                 display.setText((int) new Calculadora(Float.parseFloat(valor1.getText().toString()), Float.parseFloat(valor2.getText().toString())).somar());
             }
         });
+        btnSubtrai.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                display.setText((int) new Calculadora(Float.parseFloat(valor1.getText().toString()), Float.parseFloat(valor2.getText().toString())).subtrair());
+            }
+        });
+        btnMultiplica.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                display.setText((int) new Calculadora(Float.parseFloat(valor1.getText().toString()), Float.parseFloat(valor2.getText().toString())).multiplicar());
+            }
+        });
+        btnDivide.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                display.setText((int) new Calculadora(Float.parseFloat(valor1.getText().toString()), Float.parseFloat(valor2.getText().toString())).dividir());
+            }
+        });
     }
 
 }
