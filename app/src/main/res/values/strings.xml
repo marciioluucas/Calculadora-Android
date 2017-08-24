@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Calculadora</string>
+    <string name="valor2">Valor2</string>
+    <string name="mult">*</string>
+    <string name="som">+</string>
+    <string name="dim">-</string>
+    <string name="div">/</string>
+    <string name="valor1">Valor1</string>
+    <string name="botaoSoma">+</string>
 </resources>

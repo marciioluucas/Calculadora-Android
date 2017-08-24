@@ -1,10 +1,7 @@
 package com.example.marci.calculadora;
 
-/**
- * Created by marci on 23/08/2017.
- */
 
-public class Calculadora extends CalculadoraFactory {
+ class Calculadora extends CalculadoraFactory {
 
 
     Calculadora(float v1, float v2) {

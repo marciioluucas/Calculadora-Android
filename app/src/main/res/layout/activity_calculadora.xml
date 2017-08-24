@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marci.calculadora.CalculadoraActivity">
+
+    <RelativeLayout
+        android:layout_width="384dp"
+        android:layout_height="505dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <EditText
+            android:id="@+id/valor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Valor2"
+            android:inputType="number"
+            android:layout_below="@+id/valor1"
+            android:layout_alignLeft="@+id/valor1"
+            android:layout_alignStart="@+id/valor1" />
+
+        <EditText
+            android:id="@+id/valor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Valor1"
+            android:inputType="number"
+            android:layout_below="@+id/display"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp" />
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+        <Button
+            android:id="@+id/soma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/botaoSoma"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="364dp"
+            android:layout_marginBottom="82dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/subtrai"
+            android:layout_alignBottom="@+id/subtrai"
+            android:layout_toEndOf="@+id/subtrai"
+            android:layout_toRightOf="@+id/subtrai"
+            android:text="/"
+            tools:layout_editor_absoluteX="200dp"
+            tools:layout_editor_absoluteY="364dp"
+            tools:text="/" />
+
+        <Button
+            android:id="@+id/subtrai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/multiplica"
+            android:layout_alignBottom="@+id/multiplica"
+            android:layout_toEndOf="@+id/multiplica"
+            android:layout_toRightOf="@+id/multiplica"
+            android:text="-"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="364dp"
+            tools:text="-" />
+
+        <Button
+            android:id="@+id/multiplica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/soma"
+            android:layout_alignBottom="@+id/soma"
+            android:layout_toEndOf="@+id/soma"
+            android:layout_toRightOf="@+id/soma"
+            android:text="*"
+            tools:layout_editor_absoluteX="300dp"
+            tools:layout_editor_absoluteY="364dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

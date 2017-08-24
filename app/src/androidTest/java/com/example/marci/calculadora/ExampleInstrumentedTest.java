@@ -20,7 +20,8 @@ public class ExampleInstrumentedTest {
     public void useAppContext() throws Exception {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
-
+        Calculadora calculadora = new Calculadora(2,3);
+        assertEquals(5,calculadora.somar());
         assertEquals("com.example.marci.calculadora", appContext.getPackageName());
     }
 }
